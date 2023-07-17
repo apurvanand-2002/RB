@@ -1,0 +1,25 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.12.1",
+    "npm": "8.19.2"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4",
+    "nodemon": "^3.0.1"
+  }
+}

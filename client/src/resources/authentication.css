@@ -1,0 +1,35 @@
+.auth-parent{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    position:absolute;
+    width:100%;
+}
+.auth-parent h1{
+    font-size:22px;
+    font-weight:bold;
+}
+.auth-parent form{
+    width:400px;
+    box-shadow: 0 0 2px gray;
+    padding:20px;
+}
+.brand{
+    font-size: 20px !important ;
+    /* background-color: blue; */
+    /* opacity:0.8; */
+    color:black;
+    padding:5px;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 5px;
+}
+@media screen and (max-width:700px){
+    .auth-parent form{
+        width:300px;
+        box-shadow: 0 0 2px gray;
+        padding:20px;
+    }
+}
